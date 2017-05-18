@@ -1,0 +1,49 @@
+PODS:
+  - Device (2.0.1)
+  - DeviceLayout (0.1.3):
+    - Device (~> 2.0.0)
+  - GSMessages (1.3.4)
+  - IGListKit (3.0.0):
+    - IGListKit/Default (= 3.0.0)
+  - IGListKit/Default (3.0.0):
+    - IGListKit/Diffing
+  - IGListKit/Diffing (3.0.0)
+  - Pastel (0.3.0)
+  - ReactorKit (0.4.3):
+    - RxSwift (>= 3.0.0)
+  - RxCocoa (3.4.1):
+    - RxSwift (~> 3.4)
+  - RxExpect (0.5.6):
+    - RxCocoa (>= 3.4)
+    - RxSwift (>= 3.4)
+    - RxTest (>= 3.4)
+  - RxSwift (3.4.1)
+  - RxTest (3.4.1):
+    - RxSwift (~> 3.4)
+
+DEPENDENCIES:
+  - DeviceLayout
+  - GSMessages
+  - IGListKit
+  - Pastel
+  - ReactorKit
+  - RxCocoa
+  - RxExpect
+  - RxSwift
+  - RxTest
+
+SPEC CHECKSUMS:
+  Device: 7dd12a4fc8a72a90211f2c9ac8975a728322a148
+  DeviceLayout: ac2a96c988e1a3144a3f5f3e4da7ab958ca8cff4
+  GSMessages: b26e37bb6017b11d61f2708684179d5e9495c063
+  IGListKit: 9eab6856a15fa25ad72018ff9d9eb2178c240fff
+  Pastel: 738740c84f2b15bbcd96ebe99c4e6c2f5dd42262
+  ReactorKit: d14097db56d7f473fb0544f671d1bfbecbaec1aa
+  RxCocoa: a8a5f1d061d0043e28f56976829f31ce63e8eb09
+  RxExpect: c0693f63f7d64e64fcb4287e9888d176cbbc152b
+  RxSwift: 656f8fbeca5bc372121a72d9ebdd3cd3bc0ffade
+  RxTest: a6fd6e4069face7c6488f96f6c42296b3e44db48
+
+PODFILE CHECKSUM: 72f014fd0349b5a8ef13a0032488d2714d25dae3
+
+COCOAPODS: 1.2.1
