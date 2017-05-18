@@ -23,7 +23,20 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BMb-8T-hTr" customClass="PastelView" customModule="Pastel">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFo-Rs-yD5">
+                                        <rect key="frame" x="143" y="80" width="89" height="36"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <state key="normal" title="Generate">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.65098039220000004" green="0.75686274509999996" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="WFo-Rs-yD5" firstAttribute="centerX" secondItem="BMb-8T-hTr" secondAttribute="centerX" id="ARB-Ft-lrY"/>
+                                    <constraint firstItem="WFo-Rs-yD5" firstAttribute="top" secondItem="BMb-8T-hTr" secondAttribute="top" constant="80" id="BrZ-R1-K2e"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -35,6 +48,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="generateButton" destination="WFo-Rs-yD5" id="Hng-zs-3XO"/>
                         <outlet property="pastelView" destination="BMb-8T-hTr" id="PhX-0D-Tyi"/>
                     </connections>
                 </viewController>
