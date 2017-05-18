@@ -8,11 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+import Pastel
 
+class PasscodeViewController: UIViewController {
+
+    @IBOutlet weak var pastelView: PastelView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupPastel()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func setupPastel() {
+        pastelView.setPastelGradient(.youngPassion)
+        pastelView.animationDuration = 1.0
+        pastelView.startAnimation()
     }
 
     override func didReceiveMemoryWarning() {

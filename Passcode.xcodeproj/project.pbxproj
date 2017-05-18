@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1BD93BD99E6368531593039C /* Pods_Passcode_PasscodeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9BE90CF98A49131D3DB79C /* Pods_Passcode_PasscodeTests.framework */; };
 		4CBCC0F11ECDE78800B8522C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCC0F01ECDE78800B8522C /* AppDelegate.swift */; };
-		4CBCC0F31ECDE78800B8522C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCC0F21ECDE78800B8522C /* ViewController.swift */; };
+		4CBCC0F31ECDE78800B8522C /* PasscodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCC0F21ECDE78800B8522C /* PasscodeViewController.swift */; };
 		4CBCC0F61ECDE78800B8522C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBCC0F41ECDE78800B8522C /* Main.storyboard */; };
 		4CBCC0F81ECDE78800B8522C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CBCC0F71ECDE78800B8522C /* Assets.xcassets */; };
 		4CBCC0FB1ECDE78800B8522C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBCC0F91ECDE78800B8522C /* LaunchScreen.storyboard */; };
@@ -32,7 +32,7 @@
 		3D9BE90CF98A49131D3DB79C /* Pods_Passcode_PasscodeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Passcode_PasscodeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBCC0ED1ECDE78800B8522C /* Passcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Passcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBCC0F01ECDE78800B8522C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4CBCC0F21ECDE78800B8522C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4CBCC0F21ECDE78800B8522C /* PasscodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeViewController.swift; sourceTree = "<group>"; };
 		4CBCC0F51ECDE78800B8522C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4CBCC0F71ECDE78800B8522C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CBCC0FA1ECDE78800B8522C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				4CBCC0F01ECDE78800B8522C /* AppDelegate.swift */,
-				4CBCC0F21ECDE78800B8522C /* ViewController.swift */,
+				4CBCC0F21ECDE78800B8522C /* PasscodeViewController.swift */,
 				4CBCC0F41ECDE78800B8522C /* Main.storyboard */,
 				4CBCC0F71ECDE78800B8522C /* Assets.xcassets */,
 				4CBCC0F91ECDE78800B8522C /* LaunchScreen.storyboard */,
@@ -330,7 +330,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4CBCC0F31ECDE78800B8522C /* ViewController.swift in Sources */,
+				4CBCC0F31ECDE78800B8522C /* PasscodeViewController.swift in Sources */,
 				4CBCC0F11ECDE78800B8522C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,6 +541,7 @@
 				4CBCC10C1ECDE78800B8522C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4CBCC10D1ECDE78800B8522C /* Build configuration list for PBXNativeTarget "PasscodeTests" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +550,7 @@
 				4CBCC10F1ECDE78800B8522C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
