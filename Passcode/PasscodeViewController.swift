@@ -26,6 +26,7 @@ class PasscodeViewController: UIViewController, View {
   @IBOutlet weak var collectionView: UICollectionView!
   private let dataSource = DataSource()
 
+  @IBOutlet var passcodeViews: [UIView]!
   // Rx
   var disposeBag = DisposeBag()
   
@@ -50,7 +51,15 @@ class PasscodeViewController: UIViewController, View {
     // Pastel
     pastelView.animationDuration = 3.0
     pastelView.startAnimation()
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    // UI
+    passcodeViews.forEach {
+      $0.clipsToBounds = true
+      $0.layer.cornerRadius = 10
+      $0.layer.borderWidth = 1.0
+      $0.layer.borderColor = UIColor.white.cgColor
+      $0.backgroundColor = .clear
+    }
   }
   
   func bind(reactor: PasscodeViewReactor) {
@@ -99,6 +108,15 @@ class PasscodeViewController: UIViewController, View {
       .subscribe { [weak self](event) in
         guard let s = self else { return }
         s.reactor?.action.onNext(PasscodeViewReactor.Action.generate)
+      }.disposed(by: disposeBag)
+    
+    reactor.state
+      .map { Int($0.input.characters.count) }
+      .subscribe { [weak self](event) in
+        guard let s = self, let count = event.element else { return }
+        for (idx, view) in s.passcodeViews.enumerated() {
+          view.backgroundColor = idx < count ? .white : .clear
+        }
       }.disposed(by: disposeBag)
   }
   

@@ -23,15 +23,64 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BMb-8T-hTr" customClass="PastelView" customModule="Pastel">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpC-Qd-C4W">
+                                        <rect key="frame" x="122.5" y="80" width="130" height="33.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your passcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dS-y1-Mqh">
+                                        <rect key="frame" x="108.5" y="133.5" width="157" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="WN7-VD-n9h">
+                                        <rect key="frame" x="132.5" y="179" width="110" height="20"/>
+                                        <subviews>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zQZ-CI-tAK">
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="MhR-PN-Bkh"/>
+                                                    <constraint firstAttribute="width" constant="20" id="rK6-PC-B42"/>
+                                                </constraints>
+                                            </view>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MYS-yA-7i8">
+                                                <rect key="frame" x="30" y="0.0" width="20" height="20"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="Uua-Eg-1FC"/>
+                                                    <constraint firstAttribute="width" constant="20" id="xB2-tN-8gJ"/>
+                                                </constraints>
+                                            </view>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qDM-If-Njy">
+                                                <rect key="frame" x="60" y="0.0" width="20" height="20"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="0Km-ZV-RXq"/>
+                                                    <constraint firstAttribute="height" constant="20" id="izT-P5-Hc6"/>
+                                                </constraints>
+                                            </view>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rPn-UB-jYd">
+                                                <rect key="frame" x="90" y="0.0" width="20" height="20"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="20" id="VRU-xx-AjS"/>
+                                                    <constraint firstAttribute="height" constant="20" id="XbM-lf-pR5"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFo-Rs-yD5">
-                                        <rect key="frame" x="143" y="80" width="89" height="36"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <rect key="frame" x="157.5" y="268" width="60" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <state key="normal" title="Generate">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GUj-N4-TOH">
-                                        <rect key="frame" x="25" y="267" width="325" height="320"/>
+                                        <rect key="frame" x="25" y="307" width="325" height="320"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="320" id="tsN-Xl-VXO"/>
@@ -56,11 +105,17 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.65098039220000004" green="0.75686274509999996" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="WN7-VD-n9h" firstAttribute="top" secondItem="8dS-y1-Mqh" secondAttribute="bottom" constant="25" id="2Iy-QE-z5g"/>
                                     <constraint firstItem="GUj-N4-TOH" firstAttribute="leading" secondItem="BMb-8T-hTr" secondAttribute="leading" constant="25" id="AAX-kU-DGd"/>
                                     <constraint firstItem="WFo-Rs-yD5" firstAttribute="centerX" secondItem="BMb-8T-hTr" secondAttribute="centerX" id="ARB-Ft-lrY"/>
-                                    <constraint firstItem="WFo-Rs-yD5" firstAttribute="top" secondItem="BMb-8T-hTr" secondAttribute="top" constant="80" id="BrZ-R1-K2e"/>
-                                    <constraint firstAttribute="bottom" secondItem="GUj-N4-TOH" secondAttribute="bottom" constant="80" id="FPq-do-T63"/>
+                                    <constraint firstAttribute="bottom" secondItem="GUj-N4-TOH" secondAttribute="bottom" constant="40" id="FPq-do-T63"/>
                                     <constraint firstAttribute="trailing" secondItem="GUj-N4-TOH" secondAttribute="trailing" constant="25" id="SUY-is-JTk"/>
+                                    <constraint firstItem="GUj-N4-TOH" firstAttribute="top" secondItem="WFo-Rs-yD5" secondAttribute="bottom" constant="10" id="aIN-DL-vGO"/>
+                                    <constraint firstItem="8dS-y1-Mqh" firstAttribute="centerX" secondItem="BMb-8T-hTr" secondAttribute="centerX" id="bO2-i3-JsT"/>
+                                    <constraint firstItem="8dS-y1-Mqh" firstAttribute="top" secondItem="gpC-Qd-C4W" secondAttribute="bottom" constant="20" id="fuB-uA-FKn"/>
+                                    <constraint firstItem="gpC-Qd-C4W" firstAttribute="top" secondItem="BMb-8T-hTr" secondAttribute="top" constant="80" id="red-v5-oE6"/>
+                                    <constraint firstItem="WN7-VD-n9h" firstAttribute="centerX" secondItem="BMb-8T-hTr" secondAttribute="centerX" id="s03-iJ-JXU"/>
+                                    <constraint firstItem="gpC-Qd-C4W" firstAttribute="centerX" secondItem="BMb-8T-hTr" secondAttribute="centerX" id="vp2-th-Pjo"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -76,10 +131,15 @@
                         <outlet property="collectionView" destination="GUj-N4-TOH" id="IkX-dh-U4n"/>
                         <outlet property="generateButton" destination="WFo-Rs-yD5" id="Hng-zs-3XO"/>
                         <outlet property="pastelView" destination="BMb-8T-hTr" id="PhX-0D-Tyi"/>
+                        <outletCollection property="passcodeViews" destination="zQZ-CI-tAK" collectionClass="NSMutableArray" id="OiM-EJ-EXc"/>
+                        <outletCollection property="passcodeViews" destination="MYS-yA-7i8" collectionClass="NSMutableArray" id="hRy-N5-9Tv"/>
+                        <outletCollection property="passcodeViews" destination="qDM-If-Njy" collectionClass="NSMutableArray" id="JW4-3x-BPE"/>
+                        <outletCollection property="passcodeViews" destination="rPn-UB-jYd" collectionClass="NSMutableArray" id="dZs-U2-wGe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="35.532233883058474"/>
         </scene>
     </scenes>
 </document>
