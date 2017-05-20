@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // GSMessages
     GSMessage.font = UIFont.systemFont(ofSize: 18, weight: UIFontWeightThin)
     GSMessage.infoBackgroundColor = #colorLiteral(red: 0.09956099838, green: 0.08143451065, blue: 0.4110894799, alpha: 1)
-    GSMessage.successBackgroundColor = #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 1)
+    GSMessage.successBackgroundColor = #colorLiteral(red: 0.8688575625, green: 0.8219094872, blue: 0.0601625368, alpha: 1)
     GSMessage.errorBackgroundColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
     
     return true

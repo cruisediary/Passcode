@@ -105,7 +105,7 @@ class PasscodeViewController: UIViewController, View {
         default: break
         }
       })
-      .delay(1.0, scheduler: MainScheduler.instance)
+      .delay(2.0, scheduler: MainScheduler.instance)
       .subscribe { [weak self](event) in
         guard let s = self else { return }
         s.reactor?.action.onNext(PasscodeViewReactor.Action.generate)
