@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -31,11 +30,37 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GUj-N4-TOH">
+                                        <rect key="frame" x="25" y="267" width="325" height="320"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="320" id="tsN-Xl-VXO"/>
+                                        </constraints>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2Ug-YN-BmC">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="GrH-Ki-pLl">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </view>
+                                            </collectionViewCell>
+                                        </cells>
+                                    </collectionView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.65098039220000004" green="0.75686274509999996" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="GUj-N4-TOH" firstAttribute="leading" secondItem="BMb-8T-hTr" secondAttribute="leading" constant="25" id="AAX-kU-DGd"/>
                                     <constraint firstItem="WFo-Rs-yD5" firstAttribute="centerX" secondItem="BMb-8T-hTr" secondAttribute="centerX" id="ARB-Ft-lrY"/>
                                     <constraint firstItem="WFo-Rs-yD5" firstAttribute="top" secondItem="BMb-8T-hTr" secondAttribute="top" constant="80" id="BrZ-R1-K2e"/>
+                                    <constraint firstAttribute="bottom" secondItem="GUj-N4-TOH" secondAttribute="bottom" constant="80" id="FPq-do-T63"/>
+                                    <constraint firstAttribute="trailing" secondItem="GUj-N4-TOH" secondAttribute="trailing" constant="25" id="SUY-is-JTk"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -48,6 +73,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="collectionView" destination="GUj-N4-TOH" id="IkX-dh-U4n"/>
                         <outlet property="generateButton" destination="WFo-Rs-yD5" id="Hng-zs-3XO"/>
                         <outlet property="pastelView" destination="BMb-8T-hTr" id="PhX-0D-Tyi"/>
                     </connections>

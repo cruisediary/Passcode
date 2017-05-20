@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1BD93BD99E6368531593039C /* Pods_Passcode_PasscodeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9BE90CF98A49131D3DB79C /* Pods_Passcode_PasscodeTests.framework */; };
+		4C4BF1B41ED02B2800AD7044 /* KeyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4BF1B21ED02B2800AD7044 /* KeyCell.swift */; };
+		4C4BF1B51ED02B2800AD7044 /* KeyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4BF1B31ED02B2800AD7044 /* KeyCell.xib */; };
+		4C4BF1B71ED02B9B00AD7044 /* KeySectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4BF1B61ED02B9B00AD7044 /* KeySectionController.swift */; };
 		4CBCC0F11ECDE78800B8522C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCC0F01ECDE78800B8522C /* AppDelegate.swift */; };
 		4CBCC0F31ECDE78800B8522C /* PasscodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBCC0F21ECDE78800B8522C /* PasscodeViewController.swift */; };
 		4CBCC0F61ECDE78800B8522C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4CBCC0F41ECDE78800B8522C /* Main.storyboard */; };
@@ -31,6 +34,9 @@
 /* Begin PBXFileReference section */
 		0C5FC3B273A2F8B5A25D54C6 /* Pods-Passcode-PasscodeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passcode-PasscodeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Passcode-PasscodeTests/Pods-Passcode-PasscodeTests.release.xcconfig"; sourceTree = "<group>"; };
 		3D9BE90CF98A49131D3DB79C /* Pods_Passcode_PasscodeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Passcode_PasscodeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C4BF1B21ED02B2800AD7044 /* KeyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyCell.swift; sourceTree = "<group>"; };
+		4C4BF1B31ED02B2800AD7044 /* KeyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyCell.xib; sourceTree = "<group>"; };
+		4C4BF1B61ED02B9B00AD7044 /* KeySectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeySectionController.swift; sourceTree = "<group>"; };
 		4CBCC0ED1ECDE78800B8522C /* Passcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Passcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CBCC0F01ECDE78800B8522C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4CBCC0F21ECDE78800B8522C /* PasscodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +107,9 @@
 			isa = PBXGroup;
 			children = (
 				4CBCC0F01ECDE78800B8522C /* AppDelegate.swift */,
+				4C4BF1B21ED02B2800AD7044 /* KeyCell.swift */,
+				4C4BF1B31ED02B2800AD7044 /* KeyCell.xib */,
+				4C4BF1B61ED02B9B00AD7044 /* KeySectionController.swift */,
 				4CBCC0F21ECDE78800B8522C /* PasscodeViewController.swift */,
 				4CBCC1101ECDF01E00B8522C /* PasscodeViewReactor.swift */,
 				4CBCC0F41ECDE78800B8522C /* Main.storyboard */,
@@ -225,6 +234,7 @@
 				4CBCC0FB1ECDE78800B8522C /* LaunchScreen.storyboard in Resources */,
 				4CBCC0F81ECDE78800B8522C /* Assets.xcassets in Resources */,
 				4CBCC0F61ECDE78800B8522C /* Main.storyboard in Resources */,
+				4C4BF1B51ED02B2800AD7044 /* KeyCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +348,8 @@
 				4CBCC1111ECDF01E00B8522C /* PasscodeViewReactor.swift in Sources */,
 				4CBCC0F31ECDE78800B8522C /* PasscodeViewController.swift in Sources */,
 				4CBCC0F11ECDE78800B8522C /* AppDelegate.swift in Sources */,
+				4C4BF1B71ED02B9B00AD7044 /* KeySectionController.swift in Sources */,
+				4C4BF1B41ED02B2800AD7044 /* KeyCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
