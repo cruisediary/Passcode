@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1BD93BD99E6368531593039C /* Pods_Passcode_PasscodeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9BE90CF98A49131D3DB79C /* Pods_Passcode_PasscodeTests.framework */; };
+		4C3CD4C71ED09A4F00B3FBD7 /* RxIGListAdapterDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3CD4C61ED09A4F00B3FBD7 /* RxIGListAdapterDataSource.swift */; };
 		4C4BF1B41ED02B2800AD7044 /* KeyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4BF1B21ED02B2800AD7044 /* KeyCell.swift */; };
 		4C4BF1B51ED02B2800AD7044 /* KeyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C4BF1B31ED02B2800AD7044 /* KeyCell.xib */; };
 		4C4BF1B71ED02B9B00AD7044 /* KeySectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4BF1B61ED02B9B00AD7044 /* KeySectionController.swift */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		0C5FC3B273A2F8B5A25D54C6 /* Pods-Passcode-PasscodeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Passcode-PasscodeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Passcode-PasscodeTests/Pods-Passcode-PasscodeTests.release.xcconfig"; sourceTree = "<group>"; };
 		3D9BE90CF98A49131D3DB79C /* Pods_Passcode_PasscodeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Passcode_PasscodeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C3CD4C61ED09A4F00B3FBD7 /* RxIGListAdapterDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxIGListAdapterDataSource.swift; sourceTree = "<group>"; };
 		4C4BF1B21ED02B2800AD7044 /* KeyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyCell.swift; sourceTree = "<group>"; };
 		4C4BF1B31ED02B2800AD7044 /* KeyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyCell.xib; sourceTree = "<group>"; };
 		4C4BF1B61ED02B9B00AD7044 /* KeySectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeySectionController.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				4C4BF1B61ED02B9B00AD7044 /* KeySectionController.swift */,
 				4CBCC0F21ECDE78800B8522C /* PasscodeViewController.swift */,
 				4CBCC1101ECDF01E00B8522C /* PasscodeViewReactor.swift */,
+				4C3CD4C61ED09A4F00B3FBD7 /* RxIGListAdapterDataSource.swift */,
 				4CBCC0F41ECDE78800B8522C /* Main.storyboard */,
 				4CBCC0F71ECDE78800B8522C /* Assets.xcassets */,
 				4CBCC0F91ECDE78800B8522C /* LaunchScreen.storyboard */,
@@ -349,6 +352,7 @@
 				4CBCC0F31ECDE78800B8522C /* PasscodeViewController.swift in Sources */,
 				4CBCC0F11ECDE78800B8522C /* AppDelegate.swift in Sources */,
 				4C4BF1B71ED02B9B00AD7044 /* KeySectionController.swift in Sources */,
+				4C3CD4C71ED09A4F00B3FBD7 /* RxIGListAdapterDataSource.swift in Sources */,
 				4C4BF1B41ED02B2800AD7044 /* KeyCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
