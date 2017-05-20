@@ -37,7 +37,7 @@ class KeySectionController: ListSectionController {
   var key: Key?
   override func sizeForItem(at index: Int) -> CGSize {
     guard let context = collectionContext else { return .zero }
-    return CGSize(width: context.containerSize.width/3, height: context.containerSize.width/4)
+    return CGSize(width: context.containerSize.width/3, height: context.containerSize.height/4)
   }
   
   override func cellForItem(at index: Int) -> UICollectionViewCell {
