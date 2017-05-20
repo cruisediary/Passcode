@@ -48,20 +48,30 @@ class PasscodeViewReactor: Reactor {
     case delete
   }
   
+  enum Validation {
+    case normal
+    case valid
+    case invalid
+  }
+  
   struct State {
     var passcode: String
     var input: String
     var keys: [String]
+    var validation: Validation
   }
   
-  let initialState = State(passcode: "0000", input: "", keys: (0...9).map { "\($0)" } + ["<"])
+  let initialState = State(passcode: "0000",
+                           input: "",
+                           keys: (0...9).map { "\($0)" } + ["<"],
+                           validation: .normal)
   
   func mutate(action: Action) -> Observable<Mutation> {
     switch action {
     case .generate:
       return Observable.just(Mutation.generatePasscode)
     case .typing(let key):
-      guard let key = key else {
+      guard let key = key, currentState.validation == .normal else {
         return Observable.empty()
       }
       switch key {
@@ -79,13 +89,21 @@ class PasscodeViewReactor: Reactor {
     switch mutation {
     case .generatePasscode:
       var newState = state
+      newState.input = ""
       newState.passcode = generatePasscode()
       newState.keys = shuffleKeys()
+      newState.validation = .normal
       return newState
     case .insert(let key):
       var newState = state
       newState.input = state.input + key
-      newState.keys = shuffleKeys()
+      
+      if newState.input.characters.count == 4 {
+        newState.validation = newState.input == state.passcode ? .valid : .invalid
+      } else {
+        newState.keys = shuffleKeys()
+      }
+      
       return newState
     case .delete:
       var newState = state

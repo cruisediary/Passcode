@@ -81,6 +81,25 @@ class PasscodeViewController: UIViewController, View {
       .map { $0.keys.map { Key(key: $0) } }
       .bind(to: adapter.rx.items(dataSource: dataSource))
       .disposed(by: disposeBag)
+    
+    reactor.state
+      .map { $0.validation }
+      .filter { $0 != .normal }
+      .do(onNext: { [weak self](validation) in
+        guard let s = self else { return }
+        switch validation {
+        case .valid:
+          s.showMessage("Correct!!! 😜", type: .success)
+        case .invalid:
+          s.showMessage("InCorrect!!! 😥", type: .error)
+        default: break
+        }
+      })
+      .delay(1.0, scheduler: MainScheduler.instance)
+      .subscribe { [weak self](event) in
+        guard let s = self else { return }
+        s.reactor?.action.onNext(PasscodeViewReactor.Action.generate)
+      }.disposed(by: disposeBag)
   }
   
   override func didReceiveMemoryWarning() {
