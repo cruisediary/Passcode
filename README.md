@@ -4,6 +4,7 @@
 ![Swift](https://img.shields.io/badge/Swift-3.1-orange.svg)
 
 ![passcode1](https://media.giphy.com/media/pfOZFhFBI8gla/giphy.gif)
+![passcode2](https://media.giphy.com/media/XUNTYzNSC25aM/giphy.gif)
 
 ## Features
 
