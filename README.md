@@ -28,4 +28,4 @@ cruz, cruzdiary@gmail.com
 
 ## License
 
-Pastel is available under the MIT license. See the LICENSE file for more info.
+Passcode is available under the MIT license. See the LICENSE file for more info.
