@@ -1,7 +1,7 @@
 # passcode
 🔑 Passcode for iOS ReactorKit, IGListKit
 
-![Swift](https://img.shields.io/badge/Swift-3.1-orange.svg)
+![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg)
 
 ![passcode1](https://media.giphy.com/media/pfOZFhFBI8gla/giphy.gif)
 ![passcode2](https://media.giphy.com/media/XUNTYzNSC25aM/giphy.gif)
@@ -19,8 +19,8 @@
 ## Requirements
 
 * iOS 9+
-* Swift 3
-* CocoaPods 1.2.1+
+* Swift 4.2
+* CocoaPods 1.5.3
 
 ## Author
 
