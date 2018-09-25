@@ -1,49 +1,62 @@
 PODS:
-  - Device (2.0.1)
-  - DeviceLayout (0.1.3):
-    - Device (~> 2.0.0)
-  - GSMessages (1.3.4)
-  - IGListKit (3.0.0):
-    - IGListKit/Default (= 3.0.0)
-  - IGListKit/Default (3.0.0):
+  - Device (3.1.0)
+  - DeviceLayout (0.2.0):
+    - Device (~> 3.1.0)
+  - GSMessages (1.5.1)
+  - IGListKit (3.4.0):
+    - IGListKit/Default (= 3.4.0)
+  - IGListKit/Default (3.4.0):
     - IGListKit/Diffing
-  - IGListKit/Diffing (3.0.0)
-  - Pastel (0.3.0)
-  - ReactorKit (0.4.3):
-    - RxSwift (>= 3.0.0)
-  - RxCocoa (3.4.1):
-    - RxSwift (~> 3.4)
-  - RxExpect (0.5.6):
-    - RxCocoa (>= 3.4)
-    - RxSwift (>= 3.4)
-    - RxTest (>= 3.4)
-  - RxSwift (3.4.1)
-  - RxTest (3.4.1):
-    - RxSwift (~> 3.4)
+  - IGListKit/Diffing (3.4.0)
+  - Pastel (0.5.1)
+  - ReactorKit (1.1.0):
+    - RxSwift (>= 4.0.0)
+  - RxCocoa (4.3.1):
+    - RxSwift (~> 4.0)
+  - RxExpect (1.1.0):
+    - RxCocoa (>= 4.0.0)
+    - RxSwift (>= 4.0.0)
+    - RxTest (>= 4.0.0)
+  - RxSwift (4.3.1)
+  - RxTest (4.3.1):
+    - RxSwift (~> 4.0)
 
 DEPENDENCIES:
-  - DeviceLayout
-  - GSMessages
-  - IGListKit
-  - Pastel
-  - ReactorKit
-  - RxCocoa
-  - RxExpect
-  - RxSwift
-  - RxTest
+  - DeviceLayout (= 0.2.0)
+  - GSMessages (= 1.5.1)
+  - IGListKit (= 3.4.0)
+  - Pastel (= 0.5.1)
+  - ReactorKit (= 1.1.0)
+  - RxCocoa (= 4.3.1)
+  - RxExpect (= 1.1.0)
+  - RxSwift (= 4.3.1)
+  - RxTest (= 4.3.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Device
+    - DeviceLayout
+    - GSMessages
+    - IGListKit
+    - Pastel
+    - ReactorKit
+    - RxCocoa
+    - RxExpect
+    - RxSwift
+    - RxTest
 
 SPEC CHECKSUMS:
-  Device: 7dd12a4fc8a72a90211f2c9ac8975a728322a148
-  DeviceLayout: ac2a96c988e1a3144a3f5f3e4da7ab958ca8cff4
-  GSMessages: b26e37bb6017b11d61f2708684179d5e9495c063
-  IGListKit: 9eab6856a15fa25ad72018ff9d9eb2178c240fff
-  Pastel: 738740c84f2b15bbcd96ebe99c4e6c2f5dd42262
-  ReactorKit: d14097db56d7f473fb0544f671d1bfbecbaec1aa
-  RxCocoa: a8a5f1d061d0043e28f56976829f31ce63e8eb09
-  RxExpect: c0693f63f7d64e64fcb4287e9888d176cbbc152b
-  RxSwift: 656f8fbeca5bc372121a72d9ebdd3cd3bc0ffade
-  RxTest: a6fd6e4069face7c6488f96f6c42296b3e44db48
+  Device: 8a21a61f5f938a12dadd44d82287996081b6919b
+  DeviceLayout: 82fc2c493d675301b3f8e93788a2e69525fe4c10
+  GSMessages: 2e6893301ae99f59d72a6d8c920ad41be407216c
+  IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
+  Pastel: b3dd5b8d612dac06ae7c63c97c45c900829bc139
+  ReactorKit: 26470a9eff5094fae909a30af0be7cd0cf8a182d
+  RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
+  RxExpect: 618ecd84f07b644e9fb436e1a0ec39363caa22b2
+  RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
+  RxTest: ea97a208826906f3904c0debdd09575ebcbfe216
 
-PODFILE CHECKSUM: 72f014fd0349b5a8ef13a0032488d2714d25dae3
+PODFILE CHECKSUM: 0969869743c68128b6c4495698536fd25492109e
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.5.3
