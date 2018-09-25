@@ -83,7 +83,7 @@ class PasscodeViewReactor: Reactor {
       var newState = state
       newState.input = state.input + key
       
-      if newState.input.characters.count == 4 {
+      if newState.input.count == 4 {
         newState.validation = newState.input == state.passcode ? .valid : .invalid
       } else {
         newState.keys = shuffleKeys()
@@ -92,7 +92,7 @@ class PasscodeViewReactor: Reactor {
       return newState
     case .delete:
       var newState = state
-      newState.input.characters.popLast()
+      _ = newState.input.popLast()
       newState.keys = shuffleKeys()
       return newState
     }

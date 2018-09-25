@@ -112,7 +112,7 @@ class PasscodeViewController: UIViewController, View {
       }.disposed(by: disposeBag)
     
     reactor.state
-      .map { Int($0.input.characters.count) }
+      .map { $0.input.count }
       .subscribe { [weak self](event) in
         guard let s = self, let count = event.element else { return }
         for (idx, view) in s.passcodeViews.enumerated() {
