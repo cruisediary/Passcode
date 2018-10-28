@@ -121,11 +121,6 @@ class PasscodeViewController: UIViewController, View {
       }.disposed(by: disposeBag)
   }
   
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-    // Dispose of any resources that can be recreated.
-  }
-  
   // RxIGListKit
   final class DataSource: NSObject, ListAdapterDataSource, RxListAdapterDataSource {
     typealias Element = [Key]

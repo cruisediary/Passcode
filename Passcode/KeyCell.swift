@@ -11,8 +11,4 @@ import UIKit
 class KeyCell: UICollectionViewCell {
   static let nibName = "KeyCell"
   @IBOutlet weak var keyLabel: UILabel!
-  override func awakeFromNib() {
-    super.awakeFromNib()
-    // Initialization code
-  }
 }
