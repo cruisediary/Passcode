@@ -255,7 +255,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Passcode/Pods-Passcode-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Passcode/Pods-Passcode-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Device/Device.framework",
 				"${BUILT_PRODUCTS_DIR}/DeviceLayout/DeviceLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/GSMessages/GSMessages.framework",
@@ -278,7 +278,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Passcode/Pods-Passcode-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Passcode/Pods-Passcode-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8353567895A7C2160D4DB062 /* [CP] Check Pods Manifest.lock */ = {
@@ -323,7 +323,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Passcode-PasscodeTests/Pods-Passcode-PasscodeTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Passcode-PasscodeTests/Pods-Passcode-PasscodeTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Device/Device.framework",
 				"${BUILT_PRODUCTS_DIR}/DeviceLayout/DeviceLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/GSMessages/GSMessages.framework",
@@ -350,7 +350,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Passcode-PasscodeTests/Pods-Passcode-PasscodeTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Passcode-PasscodeTests/Pods-Passcode-PasscodeTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
