@@ -13,6 +13,10 @@ import RxCocoa
 import RxSwift
 
 class PasscodeViewReactor: Reactor {
+  struct Constant {
+    static let maxInput = 4
+  }
+
   enum Action {
     case generate
     case typing(key: String?)
@@ -48,15 +52,15 @@ class PasscodeViewReactor: Reactor {
       return Observable.just(Mutation.generatePasscode)
     case .typing(let key):
       guard let key = key, currentState.validation == .normal else {
-        return Observable.empty()
+        return .empty()
       }
       switch key {
         case "0"..."9":
-          return Observable.just(Mutation.insert(key: key))
+          return .just(Mutation.insert(key: key))
         case "<":
-          return Observable.just(Mutation.delete)
+          return .just(Mutation.delete)
         default:
-          return Observable.empty()
+          return .empty()
       }
     }
   }
@@ -74,7 +78,7 @@ class PasscodeViewReactor: Reactor {
       var newState = state
       newState.input = state.input + key
       
-      if newState.input.count == 4 {
+      if newState.input.count == Constant.maxInput {
         newState.validation = newState.input == state.passcode ? .valid : .invalid
       } else {
         newState.keys = shuffleKeys()
@@ -90,7 +94,7 @@ class PasscodeViewReactor: Reactor {
   }
   
   func generatePasscode() -> String {
-    return String((0...3).map { _ in Character("\(arc4random() % 10)") })
+    return String((0 ..< Constant.maxInput).map { _ in Character("\(arc4random() % 10)") })
   }
   
   func shuffleKeys() -> [String] {
