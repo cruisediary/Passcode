@@ -18,7 +18,6 @@ import RxSwift
 class PasscodeViewController: UIViewController, View {
   @IBOutlet weak var generateButton: UIButton!
   
-  
   // IGListKit 
   lazy var adapter: ListAdapter = {
     return ListAdapter(updater: ListAdapterUpdater(), viewController: self)
@@ -82,10 +81,10 @@ class PasscodeViewController: UIViewController, View {
       .map { $0.passcode }
       .distinctUntilChanged()
       .map { "😜 Password changed to \($0)" }
-      .subscribe { [weak self](event) in
-        guard let s = self, let message = event.element else { return }
-        s.showMessage(message, type: .info)
-      }.disposed(by: disposeBag)
+      .subscribe(onNext: { [weak self] message in
+        self?.showMessage(message, type: .info)
+      })
+      .disposed(by: disposeBag)
     
     reactor.state
       .map { $0.keys.map { Key(key: $0) } }
@@ -106,19 +105,19 @@ class PasscodeViewController: UIViewController, View {
         }
       })
       .delay(2.0, scheduler: MainScheduler.instance)
-      .subscribe { [weak self](event) in
-        guard let s = self else { return }
-        s.reactor?.action.onNext(PasscodeViewReactor.Action.generate)
-      }.disposed(by: disposeBag)
+      .map { _ in PasscodeViewReactor.Action.generate }
+      .bind(to: reactor.action)
+      .disposed(by: disposeBag)
     
     reactor.state
       .map { $0.input.count }
-      .subscribe { [weak self](event) in
-        guard let s = self, let count = event.element else { return }
+      .subscribe(onNext: { [weak self] count in
+        guard let s = self else { return }
         for (idx, view) in s.passcodeViews.enumerated() {
           view.backgroundColor = idx < count ? .white : .clear
         }
-      }.disposed(by: disposeBag)
+      })
+      .disposed(by: disposeBag)
   }
   
   // RxIGListKit
