@@ -11,22 +11,22 @@ import IGListKit
 import RxCocoa
 
 extension Reactive where Base: ListAdapter {
-  func items<DataSource: RxListAdapterDataSource & ListAdapterDataSource, O: ObservableType>(dataSource: DataSource)
-    -> (_ source: O)
-    -> Disposable where DataSource.Element == O.E {
+    func items<DataSource: RxListAdapterDataSource & ListAdapterDataSource, O: ObservableType>(dataSource: DataSource)
+        -> (_ source: O)
+        -> Disposable where DataSource.Element == O.E {
       
-      return { source in
-        let subscription = source
-          .subscribe { dataSource.listAdapter(self.base, observedEvent: $0) }
+            return { source in
+                let subscription = source
+                    .subscribe { dataSource.listAdapter(self.base, observedEvent: $0) }
         
-        return Disposables.create {
-          subscription.dispose()
-        }
-      }
-  }
+                return Disposables.create {
+                    subscription.dispose()
+                }
+            }
+    }
   
-  func setDataSource<DataSource: RxListAdapterDataSource & ListAdapterDataSource>(_ dataSource: DataSource) -> Disposable {
-    base.dataSource = dataSource
-    return Disposables.create()
-  }
+    func setDataSource<DataSource: RxListAdapterDataSource & ListAdapterDataSource>(_ dataSource: DataSource) -> Disposable {
+        base.dataSource = dataSource
+        return Disposables.create()
+    }
 }

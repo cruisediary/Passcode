@@ -9,6 +9,6 @@
 import UIKit
 
 class KeyCell: UICollectionViewCell {
-  static let nibName = "KeyCell"
-  @IBOutlet weak var keyLabel: UILabel!
+    static let nibName = "KeyCell"
+    @IBOutlet weak var keyLabel: UILabel!
 }
